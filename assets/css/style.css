@@ -1,0 +1,107 @@
+.navbar {
+    color: white;
+}
+
+.navbar-brand {
+    font-family: 'Lora', serif;
+}
+
+.navbar-toggler {
+    border: none;
+    color: transparent;
+}
+
+.navbar-collapse ul li a {
+    margin-left: 20px;
+}
+
+.navbar-nav a {
+    color: white;
+}
+
+.navbar-nav a:hover {
+    background-color: transparent;
+}
+
+h1 {
+    -webkit-text-stroke: 1px grey;
+    font-family: 'Lora', serif;
+    color: rgb(0, 0, 0);
+}
+
+.lead {
+    font-family: 'Lora', serif;
+    color: rgb(40, 39, 66);
+    -webkit-text-stroke: 0.2px rgb(161, 161, 161);
+}
+
+:root {
+    --gradient: linear-gradient(109.6deg, rgba(238, 58, 136, 1) 11.2%, rgba(128, 162, 245, 1) 91.1%);
+
+}
+
+.banner {
+    height: 100vh;
+    background-image: var(--gradient);
+    background-position: center;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    animation: bg-move 5s infinite alternate;
+}
+
+#himpunan-desc {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    /* margin: 50px; */
+    text-align: center;
+    list-style: inside;
+}
+
+.visi-misi {
+    text-align: center;
+}
+
+.himpunan-structure {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+@keyframes bg-move {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.banner-content {
+    height: 100%;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron {
+    padding: 180px 0;
+}
+
+.desc-title {
+    font-size: 30px;
+    padding-top: 90px;
+}
+
+@media(max-width:600px) {
+    #himpunan-desc {
+        font-size: 12px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .desc p {
+        padding: 0;
+    }
+}
